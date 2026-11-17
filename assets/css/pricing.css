@@ -1,0 +1,438 @@
+
+/* ========================================
+   PRICING
+======================================== */
+
+.pricing {
+    padding: 100px 0;
+    background-color: var(--color-bg-secondary);
+}
+
+/* SECTION HEADER */
+
+.pricing__top {
+    max-width: 750px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.pricing__label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--color-accent);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+    letter-spacing: 3px;
+}
+
+.pricing__title {
+    margin-bottom: 20px;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: var(--title-xl);
+    font-weight: var(--weight-medium);
+    line-height: 1.05;
+    text-transform: uppercase;
+}
+
+.pricing__title span {
+    color: var(--color-accent);
+    font-style: italic;
+}
+
+.pricing__subtitle {
+    max-width: 620px;
+    margin: 0 auto;
+    color: var(--color-text-secondary);
+    font-size: var(--text-base);
+    line-height: 1.8;
+}
+
+/* PRICING LIST */
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1050px;
+    margin: 0 auto 60px;
+}
+
+/* PRICING CARD */
+
+.pricing__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 490px;
+    padding: 35px;
+    overflow: hidden;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-accent-light);
+    border-radius: var(--radius-lg);
+    transition: var(--transition);
+}
+
+.pricing__card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 40px rgba(41, 37, 33, 0.08);
+}
+
+/* FEATURED CARD */
+
+.pricing__card--featured {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-accent);
+}
+
+/* CARD TOP */
+
+.pricing__card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--color-accent-light);
+}
+
+.pricing__card-number {
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: var(--weight-light);
+}
+
+.pricing__card-tag {
+    padding: 8px 13px;
+    color: var(--color-accent);
+    background-color: rgba(182, 154, 120, 0.12);
+    border-radius: var(--radius-full);
+    font-size: 10px;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+/* CARD CONTENT */
+
+.pricing__card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 35px;
+}
+
+.pricing__card-title {
+    margin-bottom: 20px;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: var(--weight-semibold);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.pricing__card-title span {
+    display: block;
+    margin-top: 5px;
+    color: var(--color-accent);
+    font-size: 27px;
+    font-style: italic;
+}
+
+.pricing__card-description {
+    max-width: 390px;
+    margin-bottom: 30px;
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    line-height: 1.8;
+}
+
+/* PRICE */
+
+.pricing__card-price {
+    margin-top: auto;
+    margin-bottom: 28px;
+    padding-top: 25px;
+    border-top: 1px solid var(--color-accent-light);
+}
+
+.pricing__price-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-text-secondary);
+    font-size: 11px;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 1.5px;
+}
+
+.pricing__price-value {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.pricing__price-amount {
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: 68px;
+    font-weight: var(--weight-medium);
+    line-height: 0.95;
+}
+
+.pricing__price-currency {
+    margin-top: 5px;
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: var(--weight-medium);
+}
+
+/* BUTTON */
+
+.pricing__card-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 58px;
+    padding: 0 22px;
+    text-decoration: none;
+}
+
+.pricing__card-button span:first-child {
+    font-size: 12px;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 1px;
+}
+
+.pricing__card-button span:last-child {
+    font-size: 22px;
+    transition: transform var(--transition);
+}
+
+.pricing__card-button:hover span:last-child {
+    transform: translateX(5px);
+}
+
+/* DEPOSIT NOTICE */
+
+.pricing__notice {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 30px 35px;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-accent-light);
+    border-radius: var(--radius-md);
+}
+
+.pricing__notice-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    border-radius: 50%;
+    font-family: var(--font-heading);
+    font-size: 30px;
+}
+
+.pricing__notice-content {
+    flex: 1;
+}
+
+.pricing__notice-title {
+    margin-bottom: 8px;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: 25px;
+    font-weight: var(--weight-semibold);
+}
+
+.pricing__notice-text {
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    line-height: 1.7;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1024px) {
+
+    .pricing {
+        padding: 80px 0;
+    }
+
+    .pricing__list {
+        gap: 20px;
+    }
+
+    .pricing__card {
+        padding: 28px;
+    }
+
+    .pricing__card-title {
+        font-size: 32px;
+    }
+
+    .pricing__card-title span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .pricing {
+        padding: 65px 0;
+    }
+
+    .pricing__top {
+        margin-bottom: 40px;
+    }
+
+    .pricing__label {
+        margin-bottom: 14px;
+        font-size: 11px;
+    }
+
+    .pricing__title {
+        font-size: 42px;
+    }
+
+    .pricing__subtitle {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .pricing__list {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .pricing__card {
+        min-height: 450px;
+        padding: 30px;
+    }
+
+    .pricing__card-content {
+        padding-top: 28px;
+    }
+
+    .pricing__card-title {
+        font-size: 34px;
+    }
+
+    .pricing__card-title span {
+        font-size: 26px;
+    }
+
+    .pricing__price-amount {
+        font-size: 60px;
+    }
+
+    .pricing__notice {
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .pricing__notice-title {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .pricing {
+        padding: 55px 0;
+    }
+
+    .pricing__title {
+        font-size: 36px;
+    }
+
+    .pricing__card {
+        min-height: 430px;
+        padding: 22px;
+        border-radius: var(--radius-md);
+    }
+
+    .pricing__card-top {
+        gap: 8px;
+        padding-bottom: 18px;
+    }
+
+    .pricing__card-number {
+        font-size: 28px;
+    }
+
+    .pricing__card-tag {
+        padding: 7px 10px;
+        font-size: 9px;
+        letter-spacing: 0.7px;
+    }
+
+    .pricing__card-content {
+        padding-top: 25px;
+    }
+
+    .pricing__card-title {
+        font-size: 30px;
+    }
+
+    .pricing__card-title span {
+        font-size: 23px;
+    }
+
+    .pricing__card-description {
+        margin-bottom: 25px;
+        font-size: 13px;
+    }
+
+    .pricing__price-amount {
+        font-size: 55px;
+    }
+
+    .pricing__price-currency {
+        font-size: 27px;
+    }
+
+    .pricing__card-button {
+        min-height: 54px;
+        padding: 0 16px;
+    }
+
+    .pricing__card-button span:first-child {
+        font-size: 10px;
+    }
+
+    .pricing__notice {
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px 16px;
+    }
+
+    .pricing__notice-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+    }
+
+    .pricing__notice-title {
+        font-size: 20px;
+    }
+
+    .pricing__notice-text {
+        font-size: 12px;
+    }
+}

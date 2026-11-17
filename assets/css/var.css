@@ -1,0 +1,49 @@
+
+:root {
+    /* COLORS */
+    --color-white: #FFFFFF;
+    --color-bg: #F8F5F0;
+    --color-bg-secondary: #EDE5DB;
+    --color-accent: #B69A78;
+    --color-accent-light: #D6C3AD;
+
+    --color-text: #292521;
+    --color-text-secondary: #77716A;
+
+    --color-black: #171411;
+
+    /* FONTS */
+    --font-heading: "Cormorant", serif;
+    --font-main: "Manrope", sans-serif;
+
+    /* FONT WEIGHTS */
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    /* FONT SIZES */
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-lg: 18px;
+
+    --title-sm: 28px;
+    --title-md: 36px;
+    --title-lg: 48px;
+    --title-xl: 64px;
+
+    /* LAYOUT */
+    --container-width: 1440px;
+    --container-padding: 30px;
+
+    /* BORDER RADIUS */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 100px;
+
+    /* TRANSITIONS */
+    --transition: 0.3s ease;
+}
