@@ -9,10 +9,15 @@
 }
 
 .contact__wrapper {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 0.85fr;
     align-items: center;
-    gap: 80px;
+    gap: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 /* ==============================
@@ -107,6 +112,7 @@
 
 .contact__form-wrapper {
     width: 100%;
+    max-width: 600px;
     padding: 45px;
     background-color: var(--color-white);
     border: 1px solid rgba(182, 154, 120, 0.2);

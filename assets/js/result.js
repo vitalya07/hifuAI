@@ -323,3 +323,235 @@ document.addEventListener("DOMContentLoaded", () => {
 
     calculateSlider();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const slider = document.querySelector(".video-results__slider");
+    const track = document.querySelector(".video-results__track");
+    const prevButton = document.querySelector(".video-results__arrow--prev");
+    const nextButton = document.querySelector(".video-results__arrow--next");
+    const pagination = document.querySelector(".video-results__pagination");
+
+    if (!slider || !track || !prevButton || !nextButton || !pagination) {
+        return;
+    }
+
+    const items = Array.from(track.querySelectorAll(".video-results__item"));
+
+    if (!items.length) return;
+
+    let currentIndex = 0;
+    let maxIndex = 0;
+    let itemStep = 0;
+
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+    let activePointerId = null;
+
+    const swipeThreshold = 50;
+
+    // ==============================
+    // STOP VIDEOS
+    // ==============================
+
+    function stopVideos() {
+        track.querySelectorAll("video").forEach((video) => {
+            video.pause();
+        });
+    }
+
+    // ==============================
+    // CALCULATE SLIDER
+    // ==============================
+
+    function calculateSlider() {
+        const styles = window.getComputedStyle(track);
+        const gap = parseFloat(styles.columnGap) || 0;
+
+        const itemWidth = items[0].getBoundingClientRect().width;
+
+        if (!itemWidth) return;
+
+        itemStep = itemWidth + gap;
+
+        const visibleItems = Math.max(
+            1,
+            Math.min(
+                Math.round((slider.clientWidth + gap) / itemStep),
+                items.length
+            )
+        );
+
+        maxIndex = Math.max(0, items.length - visibleItems);
+
+        currentIndex = Math.min(currentIndex, maxIndex);
+
+        createPagination();
+        updateSlider();
+    }
+
+    // ==============================
+    // CREATE PAGINATION
+    // ==============================
+
+    function createPagination() {
+        pagination.innerHTML = "";
+
+        for (let i = 0; i <= maxIndex; i++) {
+            const dot = document.createElement("button");
+
+            dot.className = "video-results__dot";
+            dot.type = "button";
+
+            dot.setAttribute(
+                "aria-label",
+                `Перейти к видео ${i + 1}`
+            );
+
+            dot.addEventListener("click", () => {
+                currentIndex = i;
+                updateSlider();
+            });
+
+            pagination.appendChild(dot);
+        }
+    }
+
+    // ==============================
+    // UPDATE SLIDER
+    // ==============================
+
+    function updateSlider() {
+        stopVideos();
+
+        track.style.transform =
+            `translate3d(-${currentIndex * itemStep}px, 0, 0)`;
+
+        const dots = pagination.querySelectorAll(".video-results__dot");
+
+        dots.forEach((dot, index) => {
+            const isActive = index === currentIndex;
+
+            dot.classList.toggle("is-active", isActive);
+
+            if (isActive) {
+                dot.setAttribute("aria-current", "true");
+            } else {
+                dot.removeAttribute("aria-current");
+            }
+        });
+
+        prevButton.disabled = currentIndex === 0;
+        nextButton.disabled = currentIndex === maxIndex;
+    }
+
+    // ==============================
+    // NEXT / PREVIOUS
+    // ==============================
+
+    function nextSlide() {
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateSlider();
+        }
+    }
+
+    function prevSlide() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    }
+
+    prevButton.addEventListener("click", prevSlide);
+    nextButton.addEventListener("click", nextSlide);
+
+    // ==============================
+    // SWIPE
+    // ==============================
+
+    slider.addEventListener("pointerdown", (event) => {
+
+        if (event.pointerType === "mouse" && event.button !== 0) {
+            return;
+        }
+
+        // Не перехватываем управление видеоплеером
+        if (event.target.closest("video")) return;
+
+        if (event.target.closest("button")) return;
+
+        isDragging = true;
+        activePointerId = event.pointerId;
+
+        startX = event.clientX;
+        startY = event.clientY;
+    });
+
+    slider.addEventListener("pointerup", (event) => {
+
+        if (!isDragging || event.pointerId !== activePointerId) {
+            return;
+        }
+
+        const diffX = event.clientX - startX;
+        const diffY = event.clientY - startY;
+
+        isDragging = false;
+        activePointerId = null;
+
+        // Игнорируем вертикальное движение
+        if (Math.abs(diffX) < Math.abs(diffY)) {
+            return;
+        }
+
+        // Игнорируем короткое движение
+        if (Math.abs(diffX) < swipeThreshold) {
+            return;
+        }
+
+        if (diffX < 0) {
+            nextSlide();
+        } else {
+            prevSlide();
+        }
+    });
+
+    function cancelSwipe(event) {
+        if (!isDragging || event.pointerId !== activePointerId) {
+            return;
+        }
+
+        isDragging = false;
+        activePointerId = null;
+    }
+
+    slider.addEventListener("pointercancel", cancelSwipe);
+
+    slider.addEventListener("lostpointercapture", () => {
+        isDragging = false;
+        activePointerId = null;
+    });
+
+    // ==============================
+    // RESIZE
+    // ==============================
+
+    let resizeTimeout;
+
+    window.addEventListener("resize", () => {
+        clearTimeout(resizeTimeout);
+
+        resizeTimeout = setTimeout(() => {
+            calculateSlider();
+        }, 150);
+    });
+
+    // ==============================
+    // INITIALIZE
+    // ==============================
+
+    calculateSlider();
+
+});
