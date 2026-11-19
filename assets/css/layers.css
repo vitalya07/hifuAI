@@ -209,16 +209,22 @@
 
 /* TECHNOLOGY INFO */
 
+
+/* ==============================
+   TECHNOLOGY INFO
+============================== */
+
 .layers__technology {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
+    width: 100%;
     max-width: 1000px;
-    min-height: 68px;
+    min-height: 120px;
     margin: 30px auto 0;
-    padding: 12px 30px;
-    border-radius: var(--radius-full);
+    padding: 22px 30px;
+    border-radius: var(--radius-lg);
     background-color: var(--color-bg-secondary);
 }
 
@@ -256,15 +262,199 @@
     top: 25px;
 }
 
+/* TECHNOLOGY CONTENT */
+
+.layers__technology-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+/* TECHNOLOGY HEADING */
+
+.layers__technology-heading {
+    margin: 0;
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: var(--weight-bold);
+    line-height: 1.3;
+    color: var(--color-text);
+}
+
 /* TECHNOLOGY TITLE */
 
 .layers__technology-title {
-    flex-shrink: 0;
     font-family: var(--font-main);
     font-size: 14px;
     font-weight: var(--weight-bold);
     color: var(--color-text);
 }
+
+/* DIVIDER */
+
+.layers__technology-divider {
+    flex-shrink: 0;
+    width: 1px;
+    height: 65px;
+    background-color: var(--color-accent);
+}
+
+/* TECHNOLOGY TEXT */
+
+.layers__technology-text {
+    max-width: 550px;
+    margin: 0;
+    font-family: var(--font-main);
+    font-size: 13px;
+    font-weight: var(--weight-regular);
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1024px) {
+
+    .layers__technology {
+        gap: 18px;
+        padding: 20px 22px;
+    }
+
+    .layers__technology-heading {
+        font-size: 15px;
+    }
+
+    .layers__technology-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .layers__technology {
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .layers__technology-heading {
+        font-size: 14px;
+    }
+
+    .layers__technology-title {
+        font-size: 13px;
+    }
+
+    .layers__technology-text {
+        font-size: 12px;
+    }
+
+    .layers__technology-divider {
+        height: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .layers__technology {
+        display: grid;
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 12px;
+        margin-top: 25px;
+        padding: 18px;
+        border-radius: var(--radius-lg);
+    }
+
+    .layers__technology-icon {
+        grid-row: 1 / 3;
+        align-self: start;
+        margin-top: 3px;
+    }
+
+    .layers__technology-content {
+        gap: 9px;
+    }
+
+    .layers__technology-heading {
+        font-size: 13px;
+    }
+
+    .layers__technology-title {
+        font-size: 12px;
+    }
+
+    .layers__technology-divider {
+        display: none;
+    }
+
+    .layers__technology-text {
+        grid-column: 2;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+
+
+/* .layers__technology {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1000px;
+    min-height: 68px;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    border-radius: var(--radius-full);
+    background-color: var(--color-bg-secondary);
+} */
+
+/* TECHNOLOGY ICON */
+
+/* .layers__technology-icon {
+    position: relative;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+}
+
+.layers__technology-icon::before,
+.layers__technology-icon::after,
+.layers__technology-icon span {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 38px;
+    height: 7px;
+    border-top: 1.5px solid var(--color-accent);
+    border-bottom: 1.5px solid var(--color-accent);
+    border-radius: 50%;
+}
+
+.layers__technology-icon::before {
+    top: 5px;
+} */
+
+/* .layers__technology-icon span {
+    top: 15px;
+} */
+
+/* .layers__technology-icon::after {
+    top: 25px;
+} */
+
+/* TECHNOLOGY TITLE */
+
+/* .layers__technology-title {
+    flex-shrink: 0;
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: var(--weight-bold);
+    color: var(--color-text);
+} */
 
 /* DIVIDER */
 

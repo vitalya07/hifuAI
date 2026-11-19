@@ -73,7 +73,7 @@
 
 .results__item {
     min-width: 0;
-    max-height: 600px;
+    /* max-height: 600px; */
 }
 
 /* IMAGES */
@@ -94,7 +94,7 @@
 .results__image {
     display: block;
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
     object-fit: contain;
     transition: transform var(--transition);
     -webkit-user-drag: none;
@@ -319,7 +319,7 @@
     }
 
     .results__image-wrapper {
-        height: 300px;
+        height: auto;
         border-radius: var(--radius-sm);
     }
 
