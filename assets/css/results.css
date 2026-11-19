@@ -95,11 +95,16 @@
     display: block;
     width: 100%;
     /* height: 600px; */
-    object-fit: contain;
+    /* object-fit: contain; */
     transition: transform var(--transition);
     -webkit-user-drag: none;
+    width: 535px;
+    height: 535px;
 }
-
+.results__image > img {
+    width: 535px;
+    height: 535px;
+}
 .results__image-wrapper:hover .results__image {
     transform: scale(1.02);
 }
