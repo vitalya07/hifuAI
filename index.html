@@ -6,6 +6,7 @@
     <title>Tratamiento HIFU 25D 360 MAX | SculptLínea</title>
     <meta name="description" content="Descubre el tratamiento HIFU 25D 360 MAX en SculptLínea. Reafirma la piel, redefine el contorno facial y mejora la firmeza de forma no invasiva. Reserva tu cita.">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.webp">
     <script src="assets/js/header.js" defer></script>
     <script src="assets/js/hero.js" defer></script>
     <script src="assets/js/layers.js" defer></script>
@@ -16,13 +17,16 @@
     <script src="assets/js/reviews.js" defer></script>
     <script src="assets/js/contacts.js" defer></script>
     <script src="assets/js/video-result.js" defer></script>
+    <script src="assets/js/form.js" defer></script>
+    <script src="assets/js/cookies.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
+
                 <!-- LOGO -->
-                <a class="header__logo" href="#home" aria-label="SculptLínea — inicio">
+                <a class="header__logo" href="index.html" aria-label="SculptLínea — inicio">
                     <img
                         class="header__logo-img"
                         src="assets/icons/logo-3.webp"
@@ -31,6 +35,7 @@
                         height="60"
                     >
                 </a>
+
                 <!-- MENU BUTTON -->
                 <button
                     class="header__burger"
@@ -43,54 +48,55 @@
                     <span class="header__burger-line"></span>
                     <span class="header__burger-line"></span>
                 </button>
+
                 <!-- NAVIGATION -->
                 <nav class="header__menu" id="header-menu" hidden>
                     <ul class="header__list">
 
                         <li class="header__item">
-                            <a class="header__link" href="#home">
+                            <a class="header__link" href="index.html">
                                 Inicio
                             </a>
                         </li>
 
                         <li class="header__item">
-                            <a class="header__link" href="#about">
+                            <a class="header__link" href="index.html#about">
                                 ¿Qué es el HIFU?
                             </a>
                         </li>
 
                         <li class="header__item">
-                            <a class="header__link" href="#treatment">
+                            <a class="header__link" href="index.html#treatment">
                                 ¿Cómo se realiza el tratamiento?
                             </a>
                         </li>
 
                         <li class="header__item">
-                            <a class="header__link" href="#prices">
+                            <a class="header__link" href="index.html#prices">
                                 Tratamientos y precios
                             </a>
                         </li>
 
                         <li class="header__item">
-                            <a class="header__link" href="#results">
+                            <a class="header__link" href="index.html#results">
                                 Resultados reales
                             </a>
                         </li>
 
                         <li class="header__item">
-                            <a class="header__link" href="#indications">
+                            <a class="header__link" href="index.html#indications">
                                 Indicaciones y contraindicaciones
                             </a>
                         </li>
 
                         <li class="header__item">
-                            <a class="header__link" href="#faq">
+                            <a class="header__link" href="index.html#faq">
                                 Preguntas frecuentes
                             </a>
                         </li>
 
                         <li class="header__item">
-                            <a class="header__link" href="#contact">
+                            <a class="header__link" href="index.html#contact">
                                 Contacto
                             </a>
                         </li>
@@ -99,7 +105,7 @@
 
                     <!-- MENU CTA -->
                     <div class="header__bottom">
-                        <a class="header__cta" href="#contact">
+                        <a class="header__cta" href="index.html#contact">
                             RESERVAR TRATAMIENTO
                             <span aria-hidden="true">→</span>
                         </a>
@@ -111,204 +117,194 @@
         </div>
     </header>
     <main>
-        
-<!-- HERO SECTION START -->
-<section class="hero" id="home">
-    <div class="container">
-        <div class="hero__wrapper">
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <!-- HERO CONTENT -->
+                    <div class="hero__content">
 
-            <!-- HERO CONTENT -->
-            <div class="hero__content">
+                        <span class="hero__label">
+                            NOVEDAD EN SANTA PONSA
+                        </span>
 
-                <span class="hero__label">
-                    NOVEDAD EN SANTA PONSA
-                </span>
+                        <h1 class="hero__title">
+                            HIFU
+                            <span>25D 360 MAX</span>
+                        </h1>
 
-                <h1 class="hero__title">
-                    HIFU
-                    <span>25D 360 MAX</span>
-                </h1>
-
-                <p class="hero__subtitle">
-                    ¿Te preocupa la flacidez facial, la papada
-                    o la pérdida de definición del rostro?
-                </p>
-
-                <p class="hero__description">
-                    Una innovadora tecnología de última generación
-                    que combina ultrasonidos focalizados (HIFU),
-                    radiofrecuencia (RF) y estimulación muscular (EMS)
-                    para ayudar a reafirmar la piel, mejorar el aspecto
-                    de la papada y redefinir el contorno facial.
-                </p>
-
-                <a class="button hero__button" href="#treatment">
-                    <span>DESCUBRE EL TRATAMIENTO</span>
-                    <span aria-hidden="true">→</span>
-                </a>
-
-            </div>
-
-            <!-- HERO VIDEO -->
-            <div class="hero__media">
-                <div class="hero__video-wrapper">
-
-                    <video
-                        class="hero__video"
-                        preload="none"
-                        playsinline
-                        poster="assets/img/video-1.png"
-                    >
-                        <source
-                            src="assets/video/video-1.MOV"
-                            type="video/mp4"
-                        >
-                        Tu navegador no admite la reproducción de vídeo.
-                    </video>
-
-                    <button
-                        class="hero__video-play"
-                        type="button"
-                        aria-label="Reproducir vídeo del tratamiento HIFU"
-                    >
-                        <span
-                            class="hero__video-play-icon"
-                            aria-hidden="true"
-                        ></span>
-                    </button>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- HERO SECTION END -->
-
-        
-<!-- ABOUT SECTION START -->
-<section class="about section" id="about">
-    <div class="container">
-
-        <div class="about__wrapper">
-
-            <!-- TOP -->
-            <div class="about__top">
-                <h2 class="about__title">
-                    ¿QUÉ ES EL <span>HIFU</span>
-                    <br>
-                    Y CÓMO FUNCIONA?
-                </h2>
-
-                <span class="about__title-line"></span>
-            </div>
-
-            <!-- INFORMATION -->
-            <div class="about__content">
-
-                <!-- ITEM 1 -->
-                <div class="about__item">
-
-                    <div class="about__icon">
-                        <svg viewBox="0 0 64 64" fill="none">
-                            <path d="M10 24C22 12 42 12 54 24"
-                                stroke="currentColor" stroke-width="2.5"
-                                stroke-linecap="round"/>
-                            <path d="M17 34C26 25 38 25 47 34"
-                                stroke="currentColor" stroke-width="2.5"
-                                stroke-linecap="round"/>
-                            <path d="M24 44C29 39 35 39 40 44"
-                                stroke="currentColor" stroke-width="2.5"
-                                stroke-linecap="round"/>
-                        </svg>
-                    </div>
-
-                    <div class="about__item-content">
-                        <p class="about__text">
-                            <strong>HIFU</strong> es ultrasonido focalizado de alta
-                            intensidad que actúa con <strong>precisión milimétrica</strong>
-                            en diferentes profundidades de la piel.
+                        <p class="hero__subtitle">
+                            ¿Te preocupa la flacidez facial, la papada
+                            o la pérdida de definición del rostro?
                         </p>
-                    </div>
 
-                </div>
-
-                <!-- ITEM 2 -->
-                <div class="about__item">
-
-                    <div class="about__icon">
-                        <svg viewBox="0 0 64 64" fill="none">
-                            <path d="M27 12C27 8.7 29.7 6 33 6C36.3 6 39 8.7 39 12V39.5C43.5 42 46 46.5 46 51C46 58.2 40.2 64 33 64C25.8 64 20 58.2 20 51C20 46.5 22.5 42 27 39.5V12Z"
-                                stroke="currentColor" stroke-width="2.5"
-                                stroke-linejoin="round"/>
-                            <path d="M33 30V51"
-                                stroke="currentColor" stroke-width="4"
-                                stroke-linecap="round"/>
-                            <circle cx="33" cy="51" r="6"
-                                stroke="currentColor" stroke-width="2.5"/>
-                        </svg>
-                    </div>
-
-                    <div class="about__item-content">
-                        <p class="about__text">
-                            Genera puntos de calor controlados que estimulan
-                            la producción natural de <strong>colágeno</strong>,
-                            favoreciendo la firmeza y elasticidad de la piel.
+                        <p class="hero__description">
+                            Una innovadora tecnología de última generación
+                            que combina ultrasonidos focalizados (HIFU),
+                            radiofrecuencia (RF) y estimulación muscular (EMS)
+                            para ayudar a reafirmar la piel, mejorar el aspecto
+                            de la papada y redefinir el contorno facial.
                         </p>
+
+                        <a class="button hero__button" href="#treatment">
+                            <span>DESCUBRE EL TRATAMIENTO</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+                    <!-- HERO VIDEO -->
+                    <div class="hero__media">
+                        <div class="hero__video-wrapper">
+
+                            <video
+                                class="hero__video"
+                                preload="none"
+                                playsinline
+                                poster="assets/img/video-1.png"
+                            >
+                                <source
+                                    src="assets/video/video-1.MOV"
+                                    type="video/mp4"
+                                >
+                                Tu navegador no admite la reproducción de vídeo.
+                            </video>
+
+                            <button
+                                class="hero__video-play"
+                                type="button"
+                                aria-label="Reproducir vídeo del tratamiento HIFU"
+                            >
+                                <span
+                                    class="hero__video-play-icon"
+                                    aria-hidden="true"
+                                ></span>
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <div class="container">
+
+                <div class="about__wrapper">
+
+                    <!-- TOP -->
+                    <div class="about__top">
+                        <h2 class="about__title">
+                            ¿QUÉ ES EL <span>HIFU</span>
+                            <br>
+                            Y CÓMO FUNCIONA?
+                        </h2>
+
+                        <span class="about__title-line"></span>
+                    </div>
+
+                    <!-- INFORMATION -->
+                    <div class="about__content">
+
+                        <!-- ITEM 1 -->
+                        <div class="about__item">
+
+                            <div class="about__icon">
+                                <svg viewBox="0 0 64 64" fill="none">
+                                    <path d="M10 24C22 12 42 12 54 24"
+                                        stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round"/>
+                                    <path d="M17 34C26 25 38 25 47 34"
+                                        stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round"/>
+                                    <path d="M24 44C29 39 35 39 40 44"
+                                        stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="about__item-content">
+                                <p class="about__text">
+                                    <strong>HIFU</strong> es ultrasonido focalizado de alta
+                                    intensidad que actúa con <strong>precisión milimétrica</strong>
+                                    en diferentes profundidades de la piel.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM 2 -->
+                        <div class="about__item">
+
+                            <div class="about__icon">
+                                <svg viewBox="0 0 64 64" fill="none">
+                                    <path d="M27 12C27 8.7 29.7 6 33 6C36.3 6 39 8.7 39 12V39.5C43.5 42 46 46.5 46 51C46 58.2 40.2 64 33 64C25.8 64 20 58.2 20 51C20 46.5 22.5 42 27 39.5V12Z"
+                                        stroke="currentColor" stroke-width="2.5"
+                                        stroke-linejoin="round"/>
+                                    <path d="M33 30V51"
+                                        stroke="currentColor" stroke-width="4"
+                                        stroke-linecap="round"/>
+                                    <circle cx="33" cy="51" r="6"
+                                        stroke="currentColor" stroke-width="2.5"/>
+                                </svg>
+                            </div>
+
+                            <div class="about__item-content">
+                                <p class="about__text">
+                                    Genera puntos de calor controlados que estimulan
+                                    la producción natural de <strong>colágeno</strong>,
+                                    favoreciendo la firmeza y elasticidad de la piel.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SKIN DIAGRAM -->
+                    <div class="about__diagram">
+
+                        <div class="about__diagram-image">
+                            <img
+                                class="about__img"
+                                src="assets/img/about/about.webp"
+                                alt="Ilustración del tratamiento HIFU y las capas de la piel"
+                                width="1200"
+                                height="900"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <!-- LAYER LABELS -->
+                        <!-- <div class="about__layers">
+
+                            <div class="about__layer">
+                                <span class="about__layer-line"></span>
+                                <span class="about__layer-name">Epidermis</span>
+                            </div>
+
+                            <div class="about__layer">
+                                <span class="about__layer-line"></span>
+                                <span class="about__layer-name">Dermis</span>
+                            </div>
+
+                            <div class="about__layer">
+                                <span class="about__layer-line"></span>
+                                <span class="about__layer-name">Tejido adiposo</span>
+                            </div>
+
+                            <div class="about__layer">
+                                <span class="about__layer-line"></span>
+                                <span class="about__layer-name">SMAS</span>
+                            </div>
+
+                        </div> -->
+
                     </div>
 
                 </div>
 
             </div>
-
-            <!-- SKIN DIAGRAM -->
-            <div class="about__diagram">
-
-                <div class="about__diagram-image">
-                    <img
-                        class="about__img"
-                        src="assets/img/about/about.webp"
-                        alt="Ilustración del tratamiento HIFU y las capas de la piel"
-                        width="1200"
-                        height="900"
-                        loading="lazy"
-                    >
-                </div>
-
-                <!-- LAYER LABELS -->
-                <!-- <div class="about__layers">
-
-                    <div class="about__layer">
-                        <span class="about__layer-line"></span>
-                        <span class="about__layer-name">Epidermis</span>
-                    </div>
-
-                    <div class="about__layer">
-                        <span class="about__layer-line"></span>
-                        <span class="about__layer-name">Dermis</span>
-                    </div>
-
-                    <div class="about__layer">
-                        <span class="about__layer-line"></span>
-                        <span class="about__layer-name">Tejido adiposo</span>
-                    </div>
-
-                    <div class="about__layer">
-                        <span class="about__layer-line"></span>
-                        <span class="about__layer-name">SMAS</span>
-                    </div>
-
-                </div> -->
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
-<!-- ABOUT SECTION END -->
-
-        <!-- LAYERS SECTION START -->
+        </section>
         <section class="layers section" id="layers">
             <div class="container">
 
@@ -460,9 +456,6 @@
 
             </div>
         </section>
-        <!-- LAYERS SECTION END -->
-        
-        <!-- TREATMENT SECTION START -->
         <section class="treatment section" id="treatment">
             <div class="container">
                 
@@ -645,8 +638,6 @@
                 </div>
             </div>
         </section>
-        <!-- TREATMENT SECTION END -->
-        <!-- PRICING SECTION START -->
         <section class="pricing section" id="prices">
             <div class="container">
 
@@ -689,7 +680,7 @@
                             </div>
 
                            <a class="button pricing__card-button"
-                                href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20el%20tratamiento%20HIFU%20Full%20Face"
+                                href="https://wa.me/34672825074"
                                 target="_blank"
                                 rel="noopener noreferrer">
 
@@ -738,7 +729,7 @@
                             </div>
 
                                 <a class="button pricing__card-button"
-                                    href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20el%20tratamiento%20HIFU%20Full%20Face"
+                                    href="https://wa.me/34672825074"
                                     target="_blank"
                                     rel="noopener noreferrer">
 
@@ -781,9 +772,6 @@
 
             </div>
         </section>
-        <!-- PRICING SECTION END -->
-
-        <!-- RESULT SECTION START -->
         <section class="results section" id="results">
             <div class="container">
                 <div class="results__top">
@@ -899,582 +887,570 @@
 
             </div>
         </section>
-        <!-- RESULT SECTION END -->
-        
-       <!-- VIDEO RESULTS SECTION START -->
-<section class="video-results section" id="video-results">
-    <div class="container">
+        <section class="video-results section" id="video-results">
+            <div class="container">
 
-        <!-- SECTION TOP START -->
-        <div class="video-results__top">
-            <span class="video-results__label">RESULTADOS EN VÍDEO</span>
+                <!-- SECTION TOP START -->
+                <div class="video-results__top">
+                    <span class="video-results__label">RESULTADOS EN VÍDEO</span>
 
-            <h2 class="video-results__title">
-                RESULTADOS <span>REALES</span>
-            </h2>
+                    <h2 class="video-results__title">
+                        RESULTADOS <span>REALES</span>
+                    </h2>
 
-            <p class="video-results__subtitle">
-                Descubre cómo se aprecian los resultados de nuestros
-                tratamientos HIFU a través de vídeos reales.
-                Cada persona es única y los resultados pueden variar.
-            </p>
-        </div>
-        <!-- SECTION TOP END -->
-
-        <!-- SLIDER START -->
-        <div class="video-results__slider">
-
-            <div class="video-results__track">
-
-                <!-- VIDEO 1 -->
-                <article class="video-results__item">
-                    <div class="video-results__video-wrapper">
-
-                        <video
-                            class="video-results__video"
-                            preload="none"
-                            playsinline
-                            poster="assets/video/result/photo/video-photo1-1.webp"
-                        >
-                            <source
-                                src="assets/video/result/result-1.MOV"
-                                type="video/mp4"
-                            >
-                            Tu navegador no admite la reproducción de vídeo.
-                        </video>
-
-                        <button
-                            class="video-results__play"
-                            type="button"
-                            aria-label="Reproducir vídeo"
-                        >
-                            <span class="video-results__play-icon"></span>
-                        </button>
-
-                    </div>
-                </article>
-
-                <!-- VIDEO 2 -->
-                <article class="video-results__item">
-                    <div class="video-results__video-wrapper">
-
-                        <video
-                            class="video-results__video"
-                            preload="none"
-                            playsinline
-                            poster="assets/video/result/photo/video-photo-2-1.webp"
-                        >
-                            <source
-                                src="assets/video/result/result-2.MP4"
-                                type="video/mp4"
-                            >
-                            Tu navegador no admite la reproducción de vídeo.
-                        </video>
-
-                        <button
-                            class="video-results__play"
-                            type="button"
-                            aria-label="Reproducir vídeo"
-                        >
-                            <span class="video-results__play-icon"></span>
-                        </button>
-
-                    </div>
-                </article>
-
-                <!-- VIDEO 3 -->
-                <article class="video-results__item">
-                    <div class="video-results__video-wrapper">
-
-                        <video
-                            class="video-results__video"
-                            preload="none"
-                            playsinline
-                            poster="assets/video/result/photo/video-photo-3-1.webp"
-                        >
-                            <source
-                                src="assets/video/result/result-3.MOV"
-                                type="video/mp4"
-                            >
-                            Tu navegador no admite la reproducción de vídeo.
-                        </video>
-
-                        <button
-                            class="video-results__play"
-                            type="button"
-                            aria-label="Reproducir vídeo"
-                        >
-                            <span class="video-results__play-icon"></span>
-                        </button>
-
-                    </div>
-                </article>
-
-                <!-- VIDEO 4 -->
-                <article class="video-results__item">
-                    <div class="video-results__video-wrapper">
-
-                        <video
-                            class="video-results__video"
-                            preload="none"
-                            playsinline
-                            poster="assets/video/result/photo/video-photo-4-1.webp"
-                        >
-                            <source
-                                src="assets/video/result/result-4.MOV"
-                                type="video/mp4"
-                            >
-                            Tu navegador no admite la reproducción de vídeo.
-                        </video>
-
-                        <button
-                            class="video-results__play"
-                            type="button"
-                            aria-label="Reproducir vídeo"
-                        >
-                            <span class="video-results__play-icon"></span>
-                        </button>
-
-                    </div>
-                </article>
-
-                <!-- VIDEO 5 -->
-                <article class="video-results__item">
-                    <div class="video-results__video-wrapper">
-
-                        <video
-                            class="video-results__video"
-                            preload="none"
-                            playsinline
-                            poster="assets/video/result/photo/video-photo-5-1.webp"
-                        >
-                            <source
-                                src="assets/video/result/result-5.MP4"
-                                type="video/mp4"
-                            >
-                            Tu navegador no admite la reproducción de vídeo.
-                        </video>
-
-                        <button
-                            class="video-results__play"
-                            type="button"
-                            aria-label="Reproducir vídeo"
-                        >
-                            <span class="video-results__play-icon"></span>
-                        </button>
-
-                    </div>
-                </article>
-
-            </div>
-
-            <!-- SLIDER CONTROLS START -->
-            <div class="video-results__controls">
-
-                <button
-                    class="video-results__arrow video-results__arrow--prev"
-                    type="button"
-                    aria-label="Vídeos anteriores"
-                >
-                    <span>←</span>
-                </button>
-
-                <div class="video-results__pagination"></div>
-
-                <button
-                    class="video-results__arrow video-results__arrow--next"
-                    type="button"
-                    aria-label="Vídeos siguientes"
-                >
-                    <span>→</span>
-                </button>
-
-            </div>
-            <!-- SLIDER CONTROLS END -->
-
-        </div>
-        <!-- SLIDER END -->
-
-        <p class="video-results__disclaimer">
-            Los resultados son individuales y pueden variar de una persona a otra.
-        </p>
-
-    </div>
-</section>
-<!-- VIDEO RESULTS SECTION END -->
-
-      
-       
-<!-- CONDITIONS SECTION START -->
-<section class="conditions section" id="conditions">
-    <div class="container">
-
-        <!-- SECTION TOP -->
-        <div class="conditions__top">
-            <span class="conditions__label">HIFU 25D 360 MAX</span>
-
-            <h2 class="conditions__title">
-                INDICACIONES Y
-                <span>CONTRAINDICACIONES</span>
-            </h2>
-        </div>
-
-        <!-- ACCORDIONS -->
-        <div class="conditions__accordions">
-
-            <!-- INDICACIONES -->
-            <article class="conditions__item">
-
-                <button
-                    class="conditions__trigger"
-                    type="button"
-                    aria-expanded="false"
-                    aria-controls="conditions-indications"
-                >
-                    <span class="conditions__trigger-content">
-                        <span class="conditions__number">01</span>
-                        <span class="conditions__trigger-title">
-                            INDICACIONES
-                        </span>
-                    </span>
-
-                    <span class="conditions__icon" aria-hidden="true">+</span>
-                </button>
-
-                <div class="conditions__panel" id="conditions-indications">
-                    <div class="conditions__panel-inner">
-
-                        <!-- <p class="conditions__description">
-                            HIFU puede ayudarte a mejorar la firmeza de la piel
-                            y recuperar una apariencia más definida en el rostro,
-                            la papada y el cuello.
-                        </p> -->
-
-                        <ul class="conditions__list">
-                            <li>
-                                Flacidez facial leve o moderada.
-                            </li>
-                            <li>
-                                Pérdida de firmeza y elasticidad de la piel.
-                            </li>
-                            <li>
-                                Pérdida de definición del óvalo facial.
-                            </li>
-                            <li>
-                                Papada y grasa localizada bajo el mentón.
-                            </li>
-                            <li>
-                                Flacidez en cuello y escote.
-                            </li>
-                            <li>
-                                • Líneas finas de expresión y signos de envejecimiento cutáneo
-                            </li>
-                        </ul>
-
-                        <!-- <p class="conditions__description">
-                            Si te identificas con alguna de estas situaciones,
-                            podemos valorar tu caso y explicarte qué resultados
-                            puedes esperar.
-                        </p> -->
-
-                    </div>
+                    <p class="video-results__subtitle">
+                        Descubre cómo se aprecian los resultados de nuestros
+                        tratamientos HIFU a través de vídeos reales.
+                        Cada persona es única y los resultados pueden variar.
+                    </p>
                 </div>
+                <!-- SECTION TOP END -->
 
-            </article>
+                <!-- SLIDER START -->
+                <div class="video-results__slider">
 
-            <!-- CONTRAINDICACIONES -->
-            <article class="conditions__item">
+                    <div class="video-results__track">
 
-                <button
-                    class="conditions__trigger"
-                    type="button"
-                    aria-expanded="false"
-                    aria-controls="conditions-contraindications"
-                >
-                    <span class="conditions__trigger-content">
-                        <span class="conditions__number">02</span>
-                        <span class="conditions__trigger-title">
-                            CONTRAINDICACIONES
-                        </span>
-                    </span>
+                        <!-- VIDEO 1 -->
+                        <article class="video-results__item">
+                            <div class="video-results__video-wrapper">
 
-                    <span class="conditions__icon" aria-hidden="true">+</span>
-                </button>
+                                <video
+                                    class="video-results__video"
+                                    preload="none"
+                                    playsinline
+                                    poster="assets/video/result/photo/video-photo1-1.webp"
+                                >
+                                    <source
+                                        src="assets/video/result/result-1.MOV"
+                                        type="video/mp4"
+                                    >
+                                    Tu navegador no admite la reproducción de vídeo.
+                                </video>
 
-                <div class="conditions__panel" id="conditions-contraindications">
-                    <div class="conditions__panel-inner">
+                                <button
+                                    class="video-results__play"
+                                    type="button"
+                                    aria-label="Reproducir vídeo"
+                                >
+                                    <span class="video-results__play-icon"></span>
+                                </button>
 
-                        <!-- <p class="conditions__description">
-                            HIFU no es adecuado para todas las personas.
-                            Antes de realizar el tratamiento, es importante
-                            tener en cuenta algunas situaciones que pueden
-                            impedirlo o requerir una consulta previa.
-                        </p> -->
-
-                        <!-- NESTED ITEM 1 -->
-                        <div class="conditions__nested">
-
-                            <button
-                                class="conditions__nested-trigger"
-                                type="button"
-                                aria-expanded="false"
-                                aria-controls="conditions-nested-1"
-                            >
-                                <span>
-                                    CONTRAINDICACIONES ABSOLUTAS
-                                </span>
-
-                                <span class="conditions__nested-icon" aria-hidden="true">+</span>
-                            </button>
-
-                            <div
-                                class="conditions__nested-panel"
-                                id="conditions-nested-1"
-                            >
-                                <div class="conditions__nested-inner">
-
-                                    <ul class="conditions__list">
-                                        <li>
-                                            Embarazo o lactancia.
-                                        </li>
-                                        <li>
-                                            Cáncer activo o tratamiento oncológico en curso.
-                                        </li>
-                                        <li>
-                                           Epilepsia
-                                        </li>
-                                        <li>
-                                            Marcapasos, desfibriladores u otros dispositivos electrónicos implantados.
-                                        </li>
-                                        <li>
-                                            Parálisis facial.
-                                        </li>
-                                        <li>
-                                            Alteraciones graves de la coagulación.
-                                        </li>
-                                        <li>
-                                            Infecciones activas, herpes, rosácea activa, acné inflamatorio, heridas, quemaduras u otras lesiones cutáneas activas en la zona de tratamiento.
-                                        </li>
-                                        <li>
-                                            Placas metálicas en la mandíbula o en la zona de tratamiento.
-                                        </li>
-                                        <li>
-                                            Antecedentes o tendencia a la formación de cicatrices queloides.
-                                        </li>
-                                        <li>
-                                            Tratamiento oral con isotretinoína en los últimos 9 meses.
-                                        </li>
-                                    </ul>
-
-                                </div>
                             </div>
+                        </article>
 
-                        </div>
+                        <!-- VIDEO 2 -->
+                        <article class="video-results__item">
+                            <div class="video-results__video-wrapper">
 
-                        <!-- NESTED ITEM 2 -->
-                        <div class="conditions__nested">
+                                <video
+                                    class="video-results__video"
+                                    preload="none"
+                                    playsinline
+                                    poster="assets/video/result/photo/video-photo-2-1.webp"
+                                >
+                                    <source
+                                        src="assets/video/result/result-2.MP4"
+                                        type="video/mp4"
+                                    >
+                                    Tu navegador no admite la reproducción de vídeo.
+                                </video>
 
-                            <button
-                                class="conditions__nested-trigger"
-                                type="button"
-                                aria-expanded="false"
-                                aria-controls="conditions-nested-2"
-                            >
-                                <span>
-                                    REQUIEREN VALORACIÓN Y/O AUTORIZACIÓN MÉDICA PREVIA
-                                </span>
+                                <button
+                                    class="video-results__play"
+                                    type="button"
+                                    aria-label="Reproducir vídeo"
+                                >
+                                    <span class="video-results__play-icon"></span>
+                                </button>
 
-                                <span class="conditions__nested-icon" aria-hidden="true">+</span>
-                            </button>
-
-                            <div
-                                class="conditions__nested-panel"
-                                id="conditions-nested-2"
-                            >
-                                <div class="conditions__nested-inner">
-
-                                    <ul class="conditions__list">
-                                        <li>
-                                            Antecedentes de cáncer o cáncer en remisión.
-                                        </li>
-                                        <li>
-                                            Tratamiento con anticoagulantes.
-                                        </li>
-                                        <li>
-                                           Enfermedades autoinmunes o del tejido conectivo.
-                                        </li>
-                                        <li>
-                                            Diabetes o neuropatías
-                                        </li>
-                                        <li>
-                                            Parestesias o alteraciones de la sensibilidad.
-                                        </li>
-                                        <li>
-                                            Paresia facial o enfermedades neurológicas relevantes.
-                                        </li>
-                                        <li>
-                                            Insuficiencia renal o hepática.
-                                        </li>
-                                        <li>
-                                            Otras enfermedades o tratamientos médicos que puedan afectar a la seguridad.
-                                        </li>
-                                    </ul>
-
-                                    <!-- <p>
-                                        No te preocupes: cuéntanos tu situación
-                                        y te ayudaremos a saber si puedes
-                                        realizarte el tratamiento.
-                                    </p> -->
-
-                                </div>
                             </div>
+                        </article>
 
-                        </div>
+                        <!-- VIDEO 3 -->
+                        <article class="video-results__item">
+                            <div class="video-results__video-wrapper">
 
-                        <!-- NESTED ITEM 3 -->
-                        <div class="conditions__nested">
+                                <video
+                                    class="video-results__video"
+                                    preload="none"
+                                    playsinline
+                                    poster="assets/video/result/photo/video-photo-3-1.webp"
+                                >
+                                    <source
+                                        src="assets/video/result/result-3.MOV"
+                                        type="video/mp4"
+                                    >
+                                    Tu navegador no admite la reproducción de vídeo.
+                                </video>
 
-                            <button
-                                class="conditions__nested-trigger"
-                                type="button"
-                                aria-expanded="false"
-                                aria-controls="conditions-nested-3"
-                            >
-                                <span>
-                                    CONTRAINDICACIONES RELATIVAS
-                                </span>
+                                <button
+                                    class="video-results__play"
+                                    type="button"
+                                    aria-label="Reproducir vídeo"
+                                >
+                                    <span class="video-results__play-icon"></span>
+                                </button>
 
-                                <span class="conditions__nested-icon" aria-hidden="true">+</span>
-                            </button>
-
-                            <div
-                                class="conditions__nested-panel"
-                                id="conditions-nested-3"
-                            >
-                                <div class="conditions__nested-inner">
-
-                                    <ul class="conditions__list">
-                                        <li>
-                                            Toxina botulínica aplicada en la zona durante el último mes.
-                                        </li>
-                                        <li>
-                                            Ácido hialurónico o rellenos dérmicos presentes en la zona de tratamiento.
-                                        </li>
-                                        <li>
-                                            Hilos tensores o bioestimuladores aplicados en los últimos 3 meses.
-                                        </li>
-                                        <li>
-                                            Otros tratamientos estéticos inyectables recientes.
-                                        </li>
-                                        <li>
-                                            Cirugía reciente en la zona de tratamiento.
-                                        </li>
-                                        <li>
-                                            Uso reciente de retinoides, ácidos u otros productos exfoliantes intensivos.
-                                        </li>
-                                    </ul>
-
-                                    <!-- <p>
-                                        No te preocupes: cuéntanos tu situación
-                                        y te ayudaremos a saber si puedes
-                                        realizarte el tratamiento.
-                                    </p> -->
-
-                                </div>
                             </div>
+                        </article>
 
-                        </div>
+                        <!-- VIDEO 4 -->
+                        <article class="video-results__item">
+                            <div class="video-results__video-wrapper">
+
+                                <video
+                                    class="video-results__video"
+                                    preload="none"
+                                    playsinline
+                                    poster="assets/video/result/photo/video-photo-4-1.webp"
+                                >
+                                    <source
+                                        src="assets/video/result/result-4.MOV"
+                                        type="video/mp4"
+                                    >
+                                    Tu navegador no admite la reproducción de vídeo.
+                                </video>
+
+                                <button
+                                    class="video-results__play"
+                                    type="button"
+                                    aria-label="Reproducir vídeo"
+                                >
+                                    <span class="video-results__play-icon"></span>
+                                </button>
+
+                            </div>
+                        </article>
+
+                        <!-- VIDEO 5 -->
+                        <article class="video-results__item">
+                            <div class="video-results__video-wrapper">
+
+                                <video
+                                    class="video-results__video"
+                                    preload="none"
+                                    playsinline
+                                    poster="assets/video/result/photo/video-photo-5-1.webp"
+                                >
+                                    <source
+                                        src="assets/video/result/result-5.MP4"
+                                        type="video/mp4"
+                                    >
+                                    Tu navegador no admite la reproducción de vídeo.
+                                </video>
+
+                                <button
+                                    class="video-results__play"
+                                    type="button"
+                                    aria-label="Reproducir vídeo"
+                                >
+                                    <span class="video-results__play-icon"></span>
+                                </button>
+
+                            </div>
+                        </article>
 
                     </div>
+
+                    <!-- SLIDER CONTROLS START -->
+                    <div class="video-results__controls">
+
+                        <button
+                            class="video-results__arrow video-results__arrow--prev"
+                            type="button"
+                            aria-label="Vídeos anteriores"
+                        >
+                            <span>←</span>
+                        </button>
+
+                        <div class="video-results__pagination"></div>
+
+                        <button
+                            class="video-results__arrow video-results__arrow--next"
+                            type="button"
+                            aria-label="Vídeos siguientes"
+                        >
+                            <span>→</span>
+                        </button>
+
+                    </div>
+                    <!-- SLIDER CONTROLS END -->
+
                 </div>
+                <!-- SLIDER END -->
 
-            </article>
-
-        </div>
-
-        <!-- RELATIVE CONTRAINDICATIONS - ALWAYS VISIBLE -->
-        <!-- <div class="conditions__relative">
-
-            <div class="conditions__relative-top">
-                <span class="conditions__relative-number">03</span>
-
-                <h3 class="conditions__relative-title">
-                    CONTRAINDICACIONES RELATIVAS
-                </h3>
-            </div>
-
-            <ul class="conditions__list">
-                <li>
-                    Toxina botulínica aplicada en la zona durante el último mes.
-                </li>
-                <li>
-                    Ácido hialurónico o rellenos dérmicos presentes en la zona de tratamiento.
-                </li>
-                <li>
-                    Hilos tensores o bioestimuladores aplicados en los últimos 3 meses.
-                </li>
-                <li>
-                    Otros tratamientos estéticos inyectables recientes.
-                </li>
-                <li>
-                    Cirugía reciente en la zona de tratamiento.
-                </li>
-                <li>
-                    Uso reciente de retinoides, ácidos u otros productos exfoliantes intensivos.
-                </li>
-            </ul>
-
-        </div> -->
-
-        <!-- IMPORTANT NOTICE - ALWAYS VISIBLE -->
-        <div class="conditions__warning">
-            <span class="conditions__warning-icon" aria-hidden="true">i</span>
-
-            <p>
-                No se aplica HIFU directamente
-                <strong>sobre la glándula tiroides.</strong>
-            </p>
-        </div>
-
-        <!-- CONSULTATION - ALWAYS VISIBLE -->
-        <div class="conditions__consultation">
-
-            <div class="conditions__consultation-content">
-
-                <span class="conditions__consultation-label">
-                    ¿TIENES ALGUNA DUDA?
-                </span>
-
-                <h3 class="conditions__consultation-title">
-                    ¿TIENES DUDAS SOBRE ALGUNA
-                    <span>CONTRAINDICACIÓN?</span>
-                </h3>
-
-                <p class="conditions__consultation-text">
-                    Escríbenos tu consulta y te orientaremos
-                    de forma personalizada.
+                <p class="video-results__disclaimer">
+                    Los resultados son individuales y pueden variar de una persona a otra.
                 </p>
 
             </div>
+        </section>
+        <section class="conditions section" id="conditions">
+            <div class="container">
 
-            <a
-                class="button conditions__consultation-button"
-                href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20tengo%20una%20consulta%20sobre%20las%20contraindicaciones%20del%20HIFU."
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <span>CONSULTAR POR WHATSAPP</span>
-                <span aria-hidden="true">→</span>
-            </a>
+                <!-- SECTION TOP -->
+                <div class="conditions__top">
+                    <span class="conditions__label">HIFU 25D 360 MAX</span>
 
-        </div>
+                    <h2 class="conditions__title">
+                        INDICACIONES Y
+                        <span>CONTRAINDICACIONES</span>
+                    </h2>
+                </div>
 
-    </div>
-</section>
-<!-- CONDITIONS SECTION END -->
+                <!-- ACCORDIONS -->
+                <div class="conditions__accordions">
 
+                    <!-- INDICACIONES -->
+                    <article class="conditions__item">
 
-        <!-- FAQ SECTION START -->
+                        <button
+                            class="conditions__trigger"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="conditions-indications"
+                        >
+                            <span class="conditions__trigger-content">
+                                <span class="conditions__number">01</span>
+                                <span class="conditions__trigger-title">
+                                    INDICACIONES
+                                </span>
+                            </span>
+
+                            <span class="conditions__icon" aria-hidden="true">+</span>
+                        </button>
+
+                        <div class="conditions__panel" id="conditions-indications">
+                            <div class="conditions__panel-inner">
+
+                                <!-- <p class="conditions__description">
+                                    HIFU puede ayudarte a mejorar la firmeza de la piel
+                                    y recuperar una apariencia más definida en el rostro,
+                                    la papada y el cuello.
+                                </p> -->
+
+                                <ul class="conditions__list">
+                                    <li>
+                                        Flacidez facial leve o moderada.
+                                    </li>
+                                    <li>
+                                        Pérdida de firmeza y elasticidad de la piel.
+                                    </li>
+                                    <li>
+                                        Pérdida de definición del óvalo facial.
+                                    </li>
+                                    <li>
+                                        Papada y grasa localizada bajo el mentón.
+                                    </li>
+                                    <li>
+                                        Flacidez en cuello y escote.
+                                    </li>
+                                    <li>
+                                        • Líneas finas de expresión y signos de envejecimiento cutáneo
+                                    </li>
+                                </ul>
+
+                                <!-- <p class="conditions__description">
+                                    Si te identificas con alguna de estas situaciones,
+                                    podemos valorar tu caso y explicarte qué resultados
+                                    puedes esperar.
+                                </p> -->
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- CONTRAINDICACIONES -->
+                    <article class="conditions__item">
+
+                        <button
+                            class="conditions__trigger"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="conditions-contraindications"
+                        >
+                            <span class="conditions__trigger-content">
+                                <span class="conditions__number">02</span>
+                                <span class="conditions__trigger-title">
+                                    CONTRAINDICACIONES
+                                </span>
+                            </span>
+
+                            <span class="conditions__icon" aria-hidden="true">+</span>
+                        </button>
+
+                        <div class="conditions__panel" id="conditions-contraindications">
+                            <div class="conditions__panel-inner">
+
+                                <!-- <p class="conditions__description">
+                                    HIFU no es adecuado para todas las personas.
+                                    Antes de realizar el tratamiento, es importante
+                                    tener en cuenta algunas situaciones que pueden
+                                    impedirlo o requerir una consulta previa.
+                                </p> -->
+
+                                <!-- NESTED ITEM 1 -->
+                                <div class="conditions__nested">
+
+                                    <button
+                                        class="conditions__nested-trigger"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="conditions-nested-1"
+                                    >
+                                        <span>
+                                            CONTRAINDICACIONES ABSOLUTAS
+                                        </span>
+
+                                        <span class="conditions__nested-icon" aria-hidden="true">+</span>
+                                    </button>
+
+                                    <div
+                                        class="conditions__nested-panel"
+                                        id="conditions-nested-1"
+                                    >
+                                        <div class="conditions__nested-inner">
+
+                                            <ul class="conditions__list">
+                                                <li>
+                                                    Embarazo o lactancia.
+                                                </li>
+                                                <li>
+                                                    Cáncer activo o tratamiento oncológico en curso.
+                                                </li>
+                                                <li>
+                                                Epilepsia
+                                                </li>
+                                                <li>
+                                                    Marcapasos, desfibriladores u otros dispositivos electrónicos implantados.
+                                                </li>
+                                                <li>
+                                                    Parálisis facial.
+                                                </li>
+                                                <li>
+                                                    Alteraciones graves de la coagulación.
+                                                </li>
+                                                <li>
+                                                    Infecciones activas, herpes, rosácea activa, acné inflamatorio, heridas, quemaduras u otras lesiones cutáneas activas en la zona de tratamiento.
+                                                </li>
+                                                <li>
+                                                    Placas metálicas en la mandíbula o en la zona de tratamiento.
+                                                </li>
+                                                <li>
+                                                    Antecedentes o tendencia a la formación de cicatrices queloides.
+                                                </li>
+                                                <li>
+                                                    Tratamiento oral con isotretinoína en los últimos 9 meses.
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- NESTED ITEM 2 -->
+                                <div class="conditions__nested">
+
+                                    <button
+                                        class="conditions__nested-trigger"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="conditions-nested-2"
+                                    >
+                                        <span>
+                                            REQUIEREN VALORACIÓN Y/O AUTORIZACIÓN MÉDICA PREVIA
+                                        </span>
+
+                                        <span class="conditions__nested-icon" aria-hidden="true">+</span>
+                                    </button>
+
+                                    <div
+                                        class="conditions__nested-panel"
+                                        id="conditions-nested-2"
+                                    >
+                                        <div class="conditions__nested-inner">
+
+                                            <ul class="conditions__list">
+                                                <li>
+                                                    Antecedentes de cáncer o cáncer en remisión.
+                                                </li>
+                                                <li>
+                                                    Tratamiento con anticoagulantes.
+                                                </li>
+                                                <li>
+                                                Enfermedades autoinmunes o del tejido conectivo.
+                                                </li>
+                                                <li>
+                                                    Diabetes o neuropatías
+                                                </li>
+                                                <li>
+                                                    Parestesias o alteraciones de la sensibilidad.
+                                                </li>
+                                                <li>
+                                                    Paresia facial o enfermedades neurológicas relevantes.
+                                                </li>
+                                                <li>
+                                                    Insuficiencia renal o hepática.
+                                                </li>
+                                                <li>
+                                                    Otras enfermedades o tratamientos médicos que puedan afectar a la seguridad.
+                                                </li>
+                                            </ul>
+
+                                            <!-- <p>
+                                                No te preocupes: cuéntanos tu situación
+                                                y te ayudaremos a saber si puedes
+                                                realizarte el tratamiento.
+                                            </p> -->
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- NESTED ITEM 3 -->
+                                <div class="conditions__nested">
+
+                                    <button
+                                        class="conditions__nested-trigger"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="conditions-nested-3"
+                                    >
+                                        <span>
+                                            CONTRAINDICACIONES RELATIVAS
+                                        </span>
+
+                                        <span class="conditions__nested-icon" aria-hidden="true">+</span>
+                                    </button>
+
+                                    <div
+                                        class="conditions__nested-panel"
+                                        id="conditions-nested-3"
+                                    >
+                                        <div class="conditions__nested-inner">
+
+                                            <ul class="conditions__list">
+                                                <li>
+                                                    Toxina botulínica aplicada en la zona durante el último mes.
+                                                </li>
+                                                <li>
+                                                    Ácido hialurónico o rellenos dérmicos presentes en la zona de tratamiento.
+                                                </li>
+                                                <li>
+                                                    Hilos tensores o bioestimuladores aplicados en los últimos 3 meses.
+                                                </li>
+                                                <li>
+                                                    Otros tratamientos estéticos inyectables recientes.
+                                                </li>
+                                                <li>
+                                                    Cirugía reciente en la zona de tratamiento.
+                                                </li>
+                                                <li>
+                                                    Uso reciente de retinoides, ácidos u otros productos exfoliantes intensivos.
+                                                </li>
+                                            </ul>
+
+                                            <!-- <p>
+                                                No te preocupes: cuéntanos tu situación
+                                                y te ayudaremos a saber si puedes
+                                                realizarte el tratamiento.
+                                            </p> -->
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- RELATIVE CONTRAINDICATIONS - ALWAYS VISIBLE -->
+                <!-- <div class="conditions__relative">
+
+                    <div class="conditions__relative-top">
+                        <span class="conditions__relative-number">03</span>
+
+                        <h3 class="conditions__relative-title">
+                            CONTRAINDICACIONES RELATIVAS
+                        </h3>
+                    </div>
+
+                    <ul class="conditions__list">
+                        <li>
+                            Toxina botulínica aplicada en la zona durante el último mes.
+                        </li>
+                        <li>
+                            Ácido hialurónico o rellenos dérmicos presentes en la zona de tratamiento.
+                        </li>
+                        <li>
+                            Hilos tensores o bioestimuladores aplicados en los últimos 3 meses.
+                        </li>
+                        <li>
+                            Otros tratamientos estéticos inyectables recientes.
+                        </li>
+                        <li>
+                            Cirugía reciente en la zona de tratamiento.
+                        </li>
+                        <li>
+                            Uso reciente de retinoides, ácidos u otros productos exfoliantes intensivos.
+                        </li>
+                    </ul>
+
+                </div> -->
+
+                <!-- IMPORTANT NOTICE - ALWAYS VISIBLE -->
+                <div class="conditions__warning">
+                    <span class="conditions__warning-icon" aria-hidden="true">i</span>
+
+                    <p>
+                        No se aplica HIFU directamente
+                        <strong>sobre la glándula tiroides.</strong>
+                    </p>
+                </div>
+
+                <!-- CONSULTATION - ALWAYS VISIBLE -->
+                <div class="conditions__consultation">
+
+                    <div class="conditions__consultation-content">
+
+                        <span class="conditions__consultation-label">
+                            ¿TIENES ALGUNA DUDA?
+                        </span>
+
+                        <h3 class="conditions__consultation-title">
+                            ¿TIENES DUDAS SOBRE ALGUNA
+                            <span>CONTRAINDICACIÓN?</span>
+                        </h3>
+
+                        <p class="conditions__consultation-text">
+                            Escríbenos tu consulta y te orientaremos
+                            de forma personalizada.
+                        </p>
+
+                    </div>
+
+                    <a
+                        class="button conditions__consultation-button"
+                        href="https://wa.me/34672825074"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span>CONSULTAR POR WHATSAPP</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
         <section class="faq section" id="faq">
             <div class="container">
 
@@ -1681,7 +1657,7 @@
 
                     <a
                         class="faq__bottom-link"
-                        href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20tengo%20una%20consulta%20sobre%20el%20tratamiento%20HIFU"
+                        href="https://wa.me/34672825074"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -1693,349 +1669,342 @@
 
             </div>
         </section>
-        <!-- FAQ SECTION END -->
-
-        
-<!-- SECTION REVIEWS START -->
-<section class="reviews section" id="reviews">
-    <div class="container">
-        <div class="reviews__header">
-            <div class="reviews__header-decor">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 12a4 4 0 0 1 4 4m4-4a4 4 0 0 1 4 4m-4 4a4 4 0 0 1-4 4m-4-4a4 4 0 0 1-4-4m4 4a4 4 0 0 1 4-4m-4 4a4 4 0 0 1-4-4z"/>
-                </svg>
-            </div>
-
-            <h2 class="reviews__header-title">
-                LO QUE DICEN<br>
-                <span class="reviews__header-title-gold">NUESTROS CLIENTES</span>
-            </h2>
-
-            <p class="reviews__header-subtitle">
-                Algunas de las opiniones que nuestros clientes han compartido en Google.
-            </p>
-
-            <div class="reviews__stats">
-                <div class="reviews__stat">
-                    <div class="reviews__stat-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f2c14c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V4M4 4V4M7 8h10M10 10v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4"/>
+        <section class="reviews section" id="reviews">
+            <div class="container">
+                <div class="reviews__header">
+                    <div class="reviews__header-decor">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 12a4 4 0 0 1 4 4m4-4a4 4 0 0 1 4 4m-4 4a4 4 0 0 1-4 4m-4-4a4 4 0 0 1-4-4m4 4a4 4 0 0 1 4-4m-4 4a4 4 0 0 1-4-4z"/>
                         </svg>
                     </div>
-                    <div class="reviews__stat-main">Más de<br>16 años</div>
-                    <div class="reviews__stat-sub">de experiencia</div>
+
+                    <h2 class="reviews__header-title">
+                        LO QUE DICEN<br>
+                        <span class="reviews__header-title-gold">NUESTROS CLIENTES</span>
+                    </h2>
+
+                    <p class="reviews__header-subtitle">
+                        Algunas de las opiniones que nuestros clientes han compartido en Google.
+                    </p>
+
+                    <div class="reviews__stats">
+                        <div class="reviews__stat">
+                            <div class="reviews__stat-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f2c14c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V4M4 4V4M7 8h10M10 10v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4"/>
+                                </svg>
+                            </div>
+                            <div class="reviews__stat-main">Más de<br>16 años</div>
+                            <div class="reviews__stat-sub">de experiencia</div>
+                        </div>
+
+                        <div class="reviews__stat">
+                            <div class="reviews__stat-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f2c14c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="9" y1="17.5" x2="9" y2="12"/>
+                                    <line x1="15" y1="17.5" x2="15" y2="12"/>
+                                </svg>
+                            </div>
+                            <div class="reviews__stat-main">Más de<br>2.000</div>
+                            <div class="reviews__stat-sub">clientes han confiado en nosotros</div>
+                        </div>
+
+                        <div class="reviews__stat reviews__rating-block">
+                            <span class="reviews__stars">★★★★★</span>
+                            <div>
+                                <div class="reviews__stat-main">5 de 5</div>
+                                <div class="reviews__stat-sub">valoración en Google</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="reviews__stat">
-                    <div class="reviews__stat-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f2c14c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="9" y1="17.5" x2="9" y2="12"/>
-                            <line x1="15" y1="17.5" x2="15" y2="12"/>
-                        </svg>
+                <!-- TOP START -->
+                <!-- <div class="reviews__top">
+                    <span class="reviews__label">OPINIONES DE NUESTROS CLIENTES</span>
+
+                    <h2 class="reviews__title">
+                        EXPERIENCIAS <span>REALES</span>
+                    </h2>
+
+                    <p class="reviews__subtitle">
+                        Descubre las experiencias de quienes ya han confiado
+                        en nuestros tratamientos.
+                    </p>
+                </div> -->
+                <!-- TOP END -->
+
+
+                <!-- SLIDER START -->
+                <div class="reviews__slider">
+
+                    <div class="reviews__track">
+
+                        <!-- REVIEW 1 -->
+                        <article class="reviews__item">
+                            <div class="reviews__card">
+
+                                <div class="reviews__card-top">
+                                    <div class="reviews__author">
+
+                                        <div class="reviews__avatar">
+                                            <img src="assets/img/reviews/1.png" alt="Sofii Torres">
+                                        </div>
+
+                                        <div class="reviews__author-info">
+                                            <h3 class="reviews__name">Sofii Torres</h3>
+                                            <span class="reviews__source">Google · 5 reseñas</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="reviews__google">G</span>
+                                </div>
+
+                                <div class="reviews__rating" aria-label="5 de 5 estrellas">
+                                    ★★★★★
+                                </div>
+
+                                <span class="reviews__date">Hace 2 semanas</span>
+
+                                <p class="reviews__text">
+                                    Vengo de viaje desde Marbella y sinceramente ha sido un
+                                    tratamiento de 100/10!!! La verdad me ha encantado.
+                                    A parte es una mujer agradable y simpática mirando mucho
+                                    por la necesidad de tu piel... Nunca olvidaré el buen trato
+                                    y si vuelvo a Mallorca no dudaré en volver aunque tenga
+                                    que recorrer 7 pueblos.
+                                </p>
+
+                            </div>
+                        </article>
+
+
+                        <!-- REVIEW 2 -->
+                        <article class="reviews__item">
+                            <div class="reviews__card">
+
+                                <div class="reviews__card-top">
+                                    <div class="reviews__author">
+
+                                        <div class="reviews__avatar">
+                                            <img src="assets/img/reviews/2.png" alt="Paqui Rivera Navia">
+                                        </div>
+
+                                        <div class="reviews__author-info">
+                                            <h3 class="reviews__name">paqui Rivera navia</h3>
+                                            <span class="reviews__source">Google · Local Guide · 9 reseñas</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="reviews__google">G</span>
+                                </div>
+
+                                <div class="reviews__rating" aria-label="5 de 5 estrellas">
+                                    ★★★★★
+                                </div>
+
+                                <span class="reviews__date">Hace 3 meses</span>
+
+                                <p class="reviews__text">
+                                    Estoy muy contenta con el tratamiento que recibí irina
+                                    es una chica muy amable y muy profesional con lo que
+                                    hace,seguro que volveré muy pronto.
+                                </p>
+
+                            </div>
+                        </article>
+
+
+                        <!-- REVIEW 3 -->
+                        <article class="reviews__item">
+                            <div class="reviews__card">
+
+                                <div class="reviews__card-top">
+                                    <div class="reviews__author">
+
+                                        <div class="reviews__avatar">
+                                            <img src="assets/img/reviews/3.png" alt="PKT F">
+                                        </div>
+
+                                        <div class="reviews__author-info">
+                                            <h3 class="reviews__name">PKT F</h3>
+                                            <span class="reviews__source">Google · 7 reseñas</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="reviews__google">G</span>
+                                </div>
+
+                                <div class="reviews__rating" aria-label="5 de 5 estrellas">
+                                    ★★★★★
+                                </div>
+
+                                <span class="reviews__date">Hace 4 años</span>
+
+                                <p class="reviews__text">
+                                    Muy profesionales, 100% titulados con experiencia,
+                                    lo recomiendo, con toda seguridad, me da mucha confianza.
+                                    El personal es muy atento. A la hora de elegir un tratamiento
+                                    te informan y aconsejan a lo más adecuado a tratar.
+                                    Sofía es una bellísima persona!
+                                </p>
+
+                            </div>
+                        </article>
+
+
+                        <!-- REVIEW 4 -->
+                        <article class="reviews__item">
+                            <div class="reviews__card">
+
+                                <div class="reviews__card-top">
+                                    <div class="reviews__author">
+
+                                        <div class="reviews__avatar">
+                                            <img src="assets/img/reviews/4.png" alt="Irina Aleksandrova">
+                                        </div>
+
+                                        <div class="reviews__author-info">
+                                            <h3 class="reviews__name">Ирина Александрова</h3>
+                                            <span class="reviews__source">Google · 2 reseñas</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="reviews__google">G</span>
+                                </div>
+
+                                <div class="reviews__rating" aria-label="5 de 5 estrellas">
+                                    ★★★★★
+                                </div>
+
+                                <span class="reviews__date">Hace 5 años</span>
+
+                                <p class="reviews__text">
+                                    Todo perfecto, Sofia maravillosa. Hice el tratamiento
+                                    de hifu lifting, resultados increíbles.
+                                    Recomiendo 100%.
+                                </p>
+
+                            </div>
+                        </article>
+
+
+                        <!-- REVIEW 5 -->
+                        <article class="reviews__item">
+                            <div class="reviews__card">
+
+                                <div class="reviews__card-top">
+                                    <div class="reviews__author">
+
+                                        <div class="reviews__avatar">
+                                            <img src="assets/img/reviews/5.png" alt="Valeria Falco">
+                                        </div>
+
+                                        <div class="reviews__author-info">
+                                            <h3 class="reviews__name">Valeria Falco</h3>
+                                            <span class="reviews__source">Google · 2 reseñas</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="reviews__google">G</span>
+                                </div>
+
+                                <div class="reviews__rating" aria-label="5 de 5 estrellas">
+                                    ★★★★★
+                                </div>
+
+                                <span class="reviews__date">Hace 6 años</span>
+
+                                <p class="reviews__text">
+                                    La recomiendo con los ojos cerrados! Es buenísima
+                                    en lo que hace, no duden en ir con ella!!!
+                                </p>
+
+                            </div>
+                        </article>
+
+
+                        <!-- REVIEW 6 -->
+                        <article class="reviews__item">
+                            <div class="reviews__card">
+
+                                <div class="reviews__card-top">
+                                    <div class="reviews__author">
+
+                                        <div class="reviews__avatar">
+                                            <img src="assets/img/reviews/6.png" alt="Lola Mallabaeva">
+                                        </div>
+
+                                        <div class="reviews__author-info">
+                                            <h3 class="reviews__name">Lola Mallabaeva</h3>
+                                            <span class="reviews__source">Google · 3 reseñas</span>
+                                        </div>
+                                    </div>
+
+                                    <span class="reviews__google">G</span>
+                                </div>
+
+                                <div class="reviews__rating" aria-label="5 de 5 estrellas">
+                                    ★★★★★
+                                </div>
+
+                                <span class="reviews__date">Hace 11 meses</span>
+
+                                <p class="reviews__text">
+                                    Llevo ya tres años viniendo a hacerme tratamientos
+                                    con Sofía, resultados excelentes tanto faciales como
+                                    corporales. Eso me motiva aún más a seguir cuidándome.
+                                    Recomiendo 100% Gran profesional.
+                                </p>
+
+                            </div>
+                        </article>
+
                     </div>
-                    <div class="reviews__stat-main">Más de<br>2.000</div>
-                    <div class="reviews__stat-sub">clientes han confiado en nosotros</div>
+
+
+                    <!-- CONTROLS -->
+                    <div class="reviews__controls">
+
+                        <button
+                            class="reviews__arrow reviews__arrow--prev"
+                            type="button"
+                            aria-label="Opiniones anteriores"
+                        >
+                            <span aria-hidden="true">←</span>
+                        </button>
+
+                        <div class="reviews__pagination"></div>
+
+                        <button
+                            class="reviews__arrow reviews__arrow--next"
+                            type="button"
+                            aria-label="Opiniones siguientes"
+                        >
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+                <!-- SLIDER END -->
+
+
+                <!-- GOOGLE LINK -->
+                <div class="reviews__bottom">
+
+                    <a class="reviews__google-link" href="https://www.google.com/maps/place/The+Beauty+Sal%C3%B3n+%7C+Centro+de+Est%C3%A9tica+Avanzada+en+Santa+Ponsa/@39.519103,2.487148,17z/data=!3m1!4b1!4m6!3m5!1s0x12978eb305b7a60f:0x876027b10c24fcf9!8m2!3d39.519103!4d2.487148!16s%2Fg%2F11gfnwdwqh" target="_blank" rel="noopener noreferrer">
+                        <span class="reviews__google-mark" aria-hidden="true"></span>
+                        VER TODAS LAS RESEÑAS EN GOOGLE
+                        <span class="reviews__link-arrow" aria-hidden="true">→</span>
+                    </a>
+
                 </div>
 
-                <div class="reviews__stat reviews__rating-block">
-                    <span class="reviews__stars">★★★★★</span>
-                    <div>
-                        <div class="reviews__stat-main">5 de 5</div>
-                        <div class="reviews__stat-sub">valoración en Google</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- TOP START -->
-        <!-- <div class="reviews__top">
-            <span class="reviews__label">OPINIONES DE NUESTROS CLIENTES</span>
-
-            <h2 class="reviews__title">
-                EXPERIENCIAS <span>REALES</span>
-            </h2>
-
-            <p class="reviews__subtitle">
-                Descubre las experiencias de quienes ya han confiado
-                en nuestros tratamientos.
-            </p>
-        </div> -->
-        <!-- TOP END -->
-
-
-        <!-- SLIDER START -->
-        <div class="reviews__slider">
-
-            <div class="reviews__track">
-
-                <!-- REVIEW 1 -->
-                <article class="reviews__item">
-                    <div class="reviews__card">
-
-                        <div class="reviews__card-top">
-                            <div class="reviews__author">
-
-                                <div class="reviews__avatar">
-                                    <img src="assets/img/reviews/1.png" alt="Sofii Torres">
-                                </div>
-
-                                <div class="reviews__author-info">
-                                    <h3 class="reviews__name">Sofii Torres</h3>
-                                    <span class="reviews__source">Google · 5 reseñas</span>
-                                </div>
-                            </div>
-
-                            <span class="reviews__google">G</span>
-                        </div>
-
-                        <div class="reviews__rating" aria-label="5 de 5 estrellas">
-                            ★★★★★
-                        </div>
-
-                        <span class="reviews__date">Hace 2 semanas</span>
-
-                        <p class="reviews__text">
-                            Vengo de viaje desde Marbella y sinceramente ha sido un
-                            tratamiento de 100/10!!! La verdad me ha encantado.
-                            A parte es una mujer agradable y simpática mirando mucho
-                            por la necesidad de tu piel... Nunca olvidaré el buen trato
-                            y si vuelvo a Mallorca no dudaré en volver aunque tenga
-                            que recorrer 7 pueblos.
-                        </p>
-
-                    </div>
-                </article>
-
-
-                <!-- REVIEW 2 -->
-                <article class="reviews__item">
-                    <div class="reviews__card">
-
-                        <div class="reviews__card-top">
-                            <div class="reviews__author">
-
-                                <div class="reviews__avatar">
-                                    <img src="assets/img/reviews/2.png" alt="Paqui Rivera Navia">
-                                </div>
-
-                                <div class="reviews__author-info">
-                                    <h3 class="reviews__name">paqui Rivera navia</h3>
-                                    <span class="reviews__source">Google · Local Guide · 9 reseñas</span>
-                                </div>
-                            </div>
-
-                            <span class="reviews__google">G</span>
-                        </div>
-
-                        <div class="reviews__rating" aria-label="5 de 5 estrellas">
-                            ★★★★★
-                        </div>
-
-                        <span class="reviews__date">Hace 3 meses</span>
-
-                        <p class="reviews__text">
-                            Estoy muy contenta con el tratamiento que recibí irina
-                            es una chica muy amable y muy profesional con lo que
-                            hace,seguro que volveré muy pronto.
-                        </p>
-
-                    </div>
-                </article>
-
-
-                <!-- REVIEW 3 -->
-                <article class="reviews__item">
-                    <div class="reviews__card">
-
-                        <div class="reviews__card-top">
-                            <div class="reviews__author">
-
-                                <div class="reviews__avatar">
-                                    <img src="assets/img/reviews/3.png" alt="PKT F">
-                                </div>
-
-                                <div class="reviews__author-info">
-                                    <h3 class="reviews__name">PKT F</h3>
-                                    <span class="reviews__source">Google · 7 reseñas</span>
-                                </div>
-                            </div>
-
-                            <span class="reviews__google">G</span>
-                        </div>
-
-                        <div class="reviews__rating" aria-label="5 de 5 estrellas">
-                            ★★★★★
-                        </div>
-
-                        <span class="reviews__date">Hace 4 años</span>
-
-                        <p class="reviews__text">
-                            Muy profesionales, 100% titulados con experiencia,
-                            lo recomiendo, con toda seguridad, me da mucha confianza.
-                            El personal es muy atento. A la hora de elegir un tratamiento
-                            te informan y aconsejan a lo más adecuado a tratar.
-                            Sofía es una bellísima persona!
-                        </p>
-
-                    </div>
-                </article>
-
-
-                <!-- REVIEW 4 -->
-                <article class="reviews__item">
-                    <div class="reviews__card">
-
-                        <div class="reviews__card-top">
-                            <div class="reviews__author">
-
-                                <div class="reviews__avatar">
-                                    <img src="assets/img/reviews/4.png" alt="Irina Aleksandrova">
-                                </div>
-
-                                <div class="reviews__author-info">
-                                    <h3 class="reviews__name">Ирина Александрова</h3>
-                                    <span class="reviews__source">Google · 2 reseñas</span>
-                                </div>
-                            </div>
-
-                            <span class="reviews__google">G</span>
-                        </div>
-
-                        <div class="reviews__rating" aria-label="5 de 5 estrellas">
-                            ★★★★★
-                        </div>
-
-                        <span class="reviews__date">Hace 5 años</span>
-
-                        <p class="reviews__text">
-                            Todo perfecto, Sofia maravillosa. Hice el tratamiento
-                            de hifu lifting, resultados increíbles.
-                            Recomiendo 100%.
-                        </p>
-
-                    </div>
-                </article>
-
-
-                <!-- REVIEW 5 -->
-                <article class="reviews__item">
-                    <div class="reviews__card">
-
-                        <div class="reviews__card-top">
-                            <div class="reviews__author">
-
-                                <div class="reviews__avatar">
-                                    <img src="assets/img/reviews/5.png" alt="Valeria Falco">
-                                </div>
-
-                                <div class="reviews__author-info">
-                                    <h3 class="reviews__name">Valeria Falco</h3>
-                                    <span class="reviews__source">Google · 2 reseñas</span>
-                                </div>
-                            </div>
-
-                            <span class="reviews__google">G</span>
-                        </div>
-
-                        <div class="reviews__rating" aria-label="5 de 5 estrellas">
-                            ★★★★★
-                        </div>
-
-                        <span class="reviews__date">Hace 6 años</span>
-
-                        <p class="reviews__text">
-                            La recomiendo con los ojos cerrados! Es buenísima
-                            en lo que hace, no duden en ir con ella!!!
-                        </p>
-
-                    </div>
-                </article>
-
-
-                <!-- REVIEW 6 -->
-                <article class="reviews__item">
-                    <div class="reviews__card">
-
-                        <div class="reviews__card-top">
-                            <div class="reviews__author">
-
-                                <div class="reviews__avatar">
-                                    <img src="assets/img/reviews/6.png" alt="Lola Mallabaeva">
-                                </div>
-
-                                <div class="reviews__author-info">
-                                    <h3 class="reviews__name">Lola Mallabaeva</h3>
-                                    <span class="reviews__source">Google · 3 reseñas</span>
-                                </div>
-                            </div>
-
-                            <span class="reviews__google">G</span>
-                        </div>
-
-                        <div class="reviews__rating" aria-label="5 de 5 estrellas">
-                            ★★★★★
-                        </div>
-
-                        <span class="reviews__date">Hace 11 meses</span>
-
-                        <p class="reviews__text">
-                            Llevo ya tres años viniendo a hacerme tratamientos
-                            con Sofía, resultados excelentes tanto faciales como
-                            corporales. Eso me motiva aún más a seguir cuidándome.
-                            Recomiendo 100% Gran profesional.
-                        </p>
-
-                    </div>
-                </article>
 
             </div>
-
-
-            <!-- CONTROLS -->
-            <div class="reviews__controls">
-
-                <button
-                    class="reviews__arrow reviews__arrow--prev"
-                    type="button"
-                    aria-label="Opiniones anteriores"
-                >
-                    <span aria-hidden="true">←</span>
-                </button>
-
-                <div class="reviews__pagination"></div>
-
-                <button
-                    class="reviews__arrow reviews__arrow--next"
-                    type="button"
-                    aria-label="Opiniones siguientes"
-                >
-                    <span aria-hidden="true">→</span>
-                </button>
-
-            </div>
-
-        </div>
-        <!-- SLIDER END -->
-
-
-        <!-- GOOGLE LINK -->
-        <div class="reviews__bottom">
-
-            <a class="reviews__google-link" href="https://www.google.com/maps/place/The+Beauty+Sal%C3%B3n+%7C+Centro+de+Est%C3%A9tica+Avanzada+en+Santa+Ponsa/@39.519103,2.487148,17z/data=!3m1!4b1!4m6!3m5!1s0x12978eb305b7a60f:0x876027b10c24fcf9!8m2!3d39.519103!4d2.487148!16s%2Fg%2F11gfnwdwqh" target="_blank" rel="noopener noreferrer">
-                <span class="reviews__google-mark" aria-hidden="true"></span>
-                VER TODAS LAS RESEÑAS EN GOOGLE
-                <span class="reviews__link-arrow" aria-hidden="true">→</span>
-            </a>
-
-        </div>
-
-
-    </div>
-</section>
-<!-- SECTION REVIEWS END -->
-
-        <!-- SECTION CONTACTS START -->
+        </section>
         <section class="contact section" id="contact">
             <div class="container">
                 <div class="contact__wrapper">
@@ -2096,7 +2065,8 @@
                         </div>
 
                         <form class="contact__form" id="contact-form">
-
+                            <!-- honeypot: скрыт от людей -->
+                            <input type="text" name="website" class="contact__honeypot" tabindex="-1" autocomplete="off">
                             <div class="contact__field">
                                 <label class="contact__field-label" for="contact-name">
                                     Nombre completo
@@ -2167,9 +2137,9 @@
                                 >
 
                                 <label for="contact-privacy">
-                                    He leído y acepto la
-                                    <a href="#" target="_blank">
-                                        política de privacidad
+                                    He leído la
+                                    <a href="privacy-policy.html" target="_blank" rel="noopener noreferrer">
+                                        Política de Privacidad
                                     </a>.
                                 </label>
                             </div>
@@ -2200,148 +2170,198 @@
                 </div>
             </div>
         </section>
-        <!-- SECTION CONTACTS END -->
     </main>
-    
-<!-- FOOTER START -->
-<footer class="footer">
-    <div class="container">
 
-        <div class="footer__wrapper">
+    <footer class="footer">
+        <div class="container">
 
-            <!-- CONTACT -->
-            <div class="footer__contact">
+            <div class="footer__wrapper">
 
-                <h3 class="footer__heading">Contacto</h3>
+                <!-- CONTACT -->
+                <div class="footer__contact">
 
-                <!-- BOOKING -->
-                <!-- <a href="#contact" class="footer__booking">
-                    Reserva tu sesión inicial con
-                    Sculptlinea™
-                </a> -->
+                    <h3 class="footer__heading">Contacto</h3>
 
-                <!-- EMAIL -->
-                <div class="footer__item">
-                    <h4 class="footer__label">EMAIL</h4>
-                    <a href="mailto:info@sculptinea.com">
-                        info@sculptinea.com
-                    </a>
+                    <!-- BOOKING -->
+                    <!-- <a href="#contact" class="footer__booking">
+                        Reserva tu sesión inicial con
+                        Sculptlinea™
+                    </a> -->
+
+                    <!-- EMAIL -->
+                    <div class="footer__item">
+                        <h4 class="footer__label">EMAIL</h4>
+                        <a href="mailto:info@sculptinea.com">
+                            info@sculptinea.com
+                        </a>
+                    </div>
+
+                    <!-- PHONE -->
+                    <div class="footer__item">
+                        <h4 class="footer__label">TELEFONO</h4>
+                        <a href="tel:+34672825074">
+                            +34 672 825 074
+                        </a>
+                    </div>
+
+                    <!-- LOCATION -->
+                    <div class="footer__item">
+                        <h4 class="footer__label">UBICACIÓN</h4>
+
+                        <address class="footer__address">
+                            The Beauty Salón<br>
+                            Carrer del Riu Sil, 8<br>
+                            07180 Santa Ponsa, Mallorca
+                        </address>
+                    </div>
+
                 </div>
 
-                <!-- PHONE -->
-                <div class="footer__item">
-                    <h4 class="footer__label">TELEFONO</h4>
-                    <a href="tel:+34672825074">
-                        +34 672 825 074
-                    </a>
-                </div>
+                <!-- SOCIALS -->
+                <div class="footer__socials">
 
-                <!-- LOCATION -->
-                <div class="footer__item">
-                    <h4 class="footer__label">UBICACIÓN</h4>
+                    <!-- INSTAGRAM -->
+                    <a href="https://www.instagram.com/beautysantaponsa?jplx=MXhqZ2FqcDNsbm15MQ%3D%3D&utm_source=qr"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram">
 
-                    <address class="footer__address">
-                        The Beauty Salón<br>
-                        Carrer del Riu Sil, 8<br>
-                        07180 Santa Ponsa, Mallorca
-                    </address>
-                </div>
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
 
-            </div>
-
-            <!-- SOCIALS -->
-            <div class="footer__socials">
-
-                <!-- INSTAGRAM -->
-                <a href="https://www.instagram.com/"
-                   class="footer__social-link"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Instagram">
-
-                    <svg viewBox="0 0 24 24"
-                         fill="none"
-                         xmlns="http://www.w3.org/2000/svg"
-                         aria-hidden="true">
-
-                        <rect x="3" y="3"
-                              width="18" height="18"
-                              rx="5"
-                              stroke="currentColor"
-                              stroke-width="1.8"/>
-
-                        <circle cx="12" cy="12" r="4"
+                            <rect x="3" y="3"
+                                width="18" height="18"
+                                rx="5"
                                 stroke="currentColor"
                                 stroke-width="1.8"/>
 
-                        <circle cx="17.5" cy="6.8" r="1"
+                            <circle cx="12" cy="12" r="4"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"/>
+
+                            <circle cx="17.5" cy="6.8" r="1"
+                                    fill="currentColor"/>
+                        </svg>
+                    </a>
+
+                    <!-- WHATSAPP -->
+                    <a href="https://wa.me/34672825074"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp">
+
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+
+                            <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.5-4.7a8.5 8.5 0 1 1 16-4.1Z"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+
+                            <path d="M8.5 8.5c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .7.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-1.9.5-1.1-.3-2.5-1-3.7-2.2-1.2-1.2-2-2.6-2.2-3.7-.2-.7 0-1.4.5-1.8Z"
                                 fill="currentColor"/>
-                    </svg>
-                </a>
+                        </svg>
+                    </a>
 
-                <!-- WHATSAPP -->
-                <a href="https://wa.me/34672825074"
-                   class="footer__social-link"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="WhatsApp">
+                </div>
+                <!-- LEGAL INFORMATION -->
+                <div class="footer__legal">
 
-                    <svg viewBox="0 0 24 24"
-                         fill="none"
-                         xmlns="http://www.w3.org/2000/svg"
-                         aria-hidden="true">
+                    <h3 class="footer__heading">Información legal</h3>
 
-                        <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.5-4.7a8.5 8.5 0 1 1 16-4.1Z"
-                              stroke="currentColor"
-                              stroke-width="1.8"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"/>
+                    <nav class="footer__legal-list" aria-label="Información legal">
 
-                        <path d="M8.5 8.5c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .7.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-1.9.5-1.1-.3-2.5-1-3.7-2.2-1.2-1.2-2-2.6-2.2-3.7-.2-.7 0-1.4.5-1.8Z"
-                              fill="currentColor"/>
-                    </svg>
-                </a>
+                        <a href="privacy-policy.html" class="footer__legal-link">
+                            Política de Privacidad
+                        </a>
 
-            </div>
+                        <a href="cookie-policy.html" class="footer__legal-link">
+                            Política de Cookies
+                        </a>
 
-            <!-- COPYRIGHT -->
-            <div class="footer__bottom">
-                <p class="footer__copyright">
-                    © 2026 Sculptlinea™. All rights reserved.
-                </p>
+                        <a href="legal-notice.html" class="footer__legal-link">
+                            Aviso Legal
+                        </a>
+
+                        <a href="booking-conditions.html" class="footer__legal-link">
+                            Condiciones de Reserva y Cancelación
+                        </a>
+
+                    </nav>
+
+                </div>
+                <!-- COPYRIGHT -->
+                <div class="footer__bottom">
+                    <p class="footer__copyright">
+                        © 2026 Sculptlinea™. All rights reserved.
+                    </p>
+                </div>
+
             </div>
 
         </div>
+    </footer>
+        <!-- <a
+            href="https://wa.me/34672825074"
+            class="whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contactar por WhatsApp"
+        >
+            <span class="whatsapp__tooltip">¡Escríbenos!</span>
+
+            <svg
+                class="whatsapp__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+            >
+                <path
+                    fill="currentColor"
+                    d="M16.02 3C8.85 3 3.02 8.83 3.02 16c0 2.29.6 4.54 1.74 6.5L3 29l6.67-1.75A12.96 12.96 0 0 0 16.02 29C23.19 29 29.02 23.17 29.02 16S23.19 3 16.02 3Zm0 23.7c-2.05 0-4.05-.55-5.8-1.6l-.42-.25-3.96 1.04 1.06-3.86-.27-.43A10.7 10.7 0 1 1 16.02 26.7Zm5.87-8.02c-.32-.16-1.9-.94-2.2-1.04-.3-.11-.52-.16-.74.16-.21.32-.84 1.04-1.03 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.58-.95-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.1-.21.05-.4-.03-.56-.08-.16-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.21 0-.56.08-.85.4-.3.32-1.12 1.1-1.12 2.7 0 1.59 1.14 3.13 1.3 3.35.16.21 2.25 3.43 5.45 4.81.76.33 1.35.53 1.81.68.76.24 1.45.2 2 .12.61-.1 1.9-.78 2.17-1.54.27-.75.27-1.4.19-1.54-.08-.14-.29-.22-.61-.38Z"
+                />
+            </svg>
+        </a> -->
+    <div class="cookies" id="cookies-banner">
+
+        <div class="cookies__content">
+            <h3 class="cookies__title">
+                Utilizamos cookies en este sitio web
+            </h3>
+
+            <p class="cookies__text">
+                Utilizamos cookies para mejorar tu experiencia de navegación
+                y analizar el uso de nuestra web.
+            </p>
+        </div>
+
+        <div class="cookies__actions">
+            <button
+                class="cookies__button cookies__button--accept"
+                id="cookies-accept"
+                type="button"
+            >
+                ACEPTAR
+            </button>
+
+            <span class="cookies__divider">|</span>
+
+            <button
+                class="cookies__button cookies__button--reject"
+                id="cookies-reject"
+                type="button"
+            >
+                RECHAZAR
+            </button>
+        </div>
 
     </div>
-</footer>
-<!-- FOOTER END -->
-
-
-
-
-
-    <a
-        href="https://wa.me/34XXXXXXXXX"
-        class="whatsapp"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Contactar por WhatsApp"
-    >
-        <span class="whatsapp__tooltip">¡Escríbenos!</span>
-
-        <svg
-            class="whatsapp__icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-        >
-            <path
-                fill="currentColor"
-                d="M16.02 3C8.85 3 3.02 8.83 3.02 16c0 2.29.6 4.54 1.74 6.5L3 29l6.67-1.75A12.96 12.96 0 0 0 16.02 29C23.19 29 29.02 23.17 29.02 16S23.19 3 16.02 3Zm0 23.7c-2.05 0-4.05-.55-5.8-1.6l-.42-.25-3.96 1.04 1.06-3.86-.27-.43A10.7 10.7 0 1 1 16.02 26.7Zm5.87-8.02c-.32-.16-1.9-.94-2.2-1.04-.3-.11-.52-.16-.74.16-.21.32-.84 1.04-1.03 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.58-.95-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.1-.21.05-.4-.03-.56-.08-.16-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.21 0-.56.08-.85.4-.3.32-1.12 1.1-1.12 2.7 0 1.59 1.14 3.13 1.3 3.35.16.21 2.25 3.43 5.45 4.81.76.33 1.35.53 1.81.68.76.24 1.45.2 2 .12.61-.1 1.9-.78 2.17-1.54.27-.75.27-1.4.19-1.54-.08-.14-.29-.22-.61-.38Z"
-            />
-        </svg>
-    </a>
-
 </body>
 </html>

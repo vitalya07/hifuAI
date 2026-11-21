@@ -7,6 +7,12 @@
     padding: 100px 0;
     background-color: var(--color-bg-secondary);
 }
+.contact__honeypot {
+    position: absolute !important;
+    left: -9999px !important;
+    height: 0;
+    opacity: 0;
+}
 
 .contact__wrapper {
     /* display: grid;
